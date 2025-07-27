@@ -1,15 +1,15 @@
 import React, { Suspense } from 'react';
 import { Data, Language } from '@/types/api';
-import HeroSection from './HeroSection';
-import InstructorSection from './InstructorSection';
-import FeaturesSection from './FeaturesSection';
-import PointersSection from './PointersSection';
-import AboutSection from './AboutSection';
-import ExclusiveFeaturesSection from './ExclusiveFeaturesSection';
-import TestimonialsSection from './TestimonialsSection';
-import FAQSection from './FAQSection';
-import DynamicSEO from './DynamicSEO';
-import LoadingSpinner from './LoadingSpinner';
+import HeroSection from '@/components/HeroSection';
+import InstructorSection from '@/components/InstructorSection';
+import FeaturesSection from '@/components/FeaturesSection';
+import PointersSection from '@/components/PointersSection';
+import AboutSection from '@/components/AboutSection';
+import ExclusiveFeaturesSection from '@/components/ExclusiveFeaturesSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FAQSection from '@/components/FAQSection';
+import DynamicSEO from '@/components/DynamicSEO';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface ProductPageProps {
   data: Data;

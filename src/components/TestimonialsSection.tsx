@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { Section } from '@/types/api';
 import Image from 'next/image';
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from '@/components/VideoPlayer';
 import { ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
 
 interface TestimonialsSectionProps {
@@ -132,6 +132,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ section }) =>
                           width={48}
                           height={48}
                           className="rounded-full w-10 h-10 sm:w-12 sm:h-12 object-cover border-2 border-gray-200"
+                          loading="lazy"
                         />
                         <div className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-green-500 rounded-full border-2 border-white"></div>
                       </div>

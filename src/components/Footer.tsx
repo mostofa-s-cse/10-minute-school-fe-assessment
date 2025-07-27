@@ -3,6 +3,7 @@ import { Data, Language } from '@/types/api';
 import Image from 'next/image';
 import { Facebook, Twitter, Youtube, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import Logo from '@/assets/10mslogo-svg.svg';
 
 interface FooterProps {
   data: Data;
@@ -17,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
           {/* Company Info */}
           <div>
             <Image 
-              src="/10mslogo-svg.svg" 
+              src={Logo} 
               alt="10 Minute School Logo" 
               width={140} 
               height={140} 
