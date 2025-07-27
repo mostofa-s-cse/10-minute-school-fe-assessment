@@ -7,6 +7,7 @@ import PointersSection from '@/components/PointersSection';
 import AboutSection from '@/components/AboutSection';
 import ExclusiveFeaturesSection from '@/components/ExclusiveFeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import ContentPreviewSection from '@/components/ContentPreviewSection';
 import FAQSection from '@/components/FAQSection';
 import DynamicSEO from '@/components/DynamicSEO';
 import LoadingSpinner from '@/components/LoadingSpinner';
@@ -39,6 +40,7 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
   const pointersSection = findSection('pointers');
   const aboutSection = findSection('about');
   const exclusiveFeaturesSection = findSection('feature_explanations');
+  const contentPreviewSection = findSection('content_preview');
   const testimonialsSection = findSection('testimonials');
   const faqSection = findSection('faq');
 
@@ -84,6 +86,13 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
       {exclusiveFeaturesSection && (
         <Suspense fallback={<SectionLoading sectionName="Exclusive Features" />}>
           <ExclusiveFeaturesSection section={exclusiveFeaturesSection} language={language} />
+        </Suspense>
+      )}
+
+      {/* Content Preview */}
+      {contentPreviewSection && (
+        <Suspense fallback={<SectionLoading sectionName="Content Preview" />}>
+          <ContentPreviewSection section={contentPreviewSection} />
         </Suspense>
       )}
 
