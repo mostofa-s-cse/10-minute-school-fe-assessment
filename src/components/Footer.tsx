@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
           {/* Company Info */}
           <div>
             <Image 
-              src="/logo.svg" 
+              src="https://cdn.10minuteschool.com/images/svg/10mslogo-svg.svg" 
               alt="10 Minute School Logo" 
               width={140} 
               height={140} 
