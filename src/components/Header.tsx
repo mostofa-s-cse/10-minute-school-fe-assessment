@@ -4,6 +4,7 @@ import React from 'react';
 import { Language } from '@/types/api';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -21,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-                <img src="/10mslogo-svg.svg" alt="10 Minute School" width={100} height={100} loading="lazy" />
+                <Image src="/logo.svg" alt="10 Minute School" width={100} height={100} loading="lazy" />
               </Link>
             </div>
           </div>
