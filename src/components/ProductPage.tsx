@@ -7,14 +7,6 @@ import PointersSection from '@/components/PointersSection';
 import AboutSection from '@/components/AboutSection';
 import ExclusiveFeaturesSection from '@/components/ExclusiveFeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
-import ContentPreviewSection from '@/components/ContentPreviewSection';
-import BundleItemsSection from '@/components/BundleItemsSection';
-import OffersSection from '@/components/OffersSection';
-import GroupJoinEngagementSection from '@/components/GroupJoinEngagementSection';
-import FreeItemsSection from '@/components/FreeItemsSection';
-import CertificateSection from '@/components/CertificateSection';
-import RequirementsSection from '@/components/RequirementsSection';
-import HowToPaySection from '@/components/HowToPaySection';
 import FAQSection from '@/components/FAQSection';
 import DynamicSEO from '@/components/DynamicSEO';
 import LoadingSpinner from '@/components/LoadingSpinner';
@@ -42,20 +34,12 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
   };
 
   // Get sections in order
-  const bundleItemsSection = findSection('bundle_items');
-  const offersSection = findSection('offers');
   const instructorSection = findSection('instructors');
   const featuresSection = findSection('features');
-  const groupJoinEngagementSection = findSection('group_join_engagement');
   const pointersSection = findSection('pointers');
-  const contentPreviewSection = findSection('content_preview');
   const aboutSection = findSection('about');
   const exclusiveFeaturesSection = findSection('feature_explanations');
-  const freeItemsSection = findSection('free_items');
-  const certificateSection = findSection('certificate');
   const testimonialsSection = findSection('testimonials');
-  const requirementsSection = findSection('requirements');
-  const howToPaySection = findSection('how_to_pay');
   const faqSection = findSection('faq');
 
   return (
@@ -68,20 +52,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
         <HeroSection data={data} language={language} />
       </Suspense>
 
-      {/* Bundle Items */}
-      {bundleItemsSection && (
-        <Suspense fallback={<SectionLoading sectionName="Bundle Items" />}>
-          <BundleItemsSection section={bundleItemsSection} />
-        </Suspense>
-      )}
-
-      {/* Offers */}
-      {offersSection && (
-        <Suspense fallback={<SectionLoading sectionName="Offers" />}>
-          <OffersSection section={offersSection} />
-        </Suspense>
-      )}
-
       {/* Course Instructor */}
       {instructorSection && (
         <Suspense fallback={<SectionLoading sectionName="Instructor" />}>
@@ -93,13 +63,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
       {featuresSection && (
         <Suspense fallback={<SectionLoading sectionName="Features" />}>
           <FeaturesSection section={featuresSection} language={language} />
-        </Suspense>
-      )}
-
-      {/* Group Join Engagement */}
-      {groupJoinEngagementSection && (
-        <Suspense fallback={<SectionLoading sectionName="Group Engagement" />}>
-          <GroupJoinEngagementSection section={groupJoinEngagementSection} />
         </Suspense>
       )}
 
@@ -124,13 +87,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
         </Suspense>
       )}
 
-      {/* Content Preview */}
-      {contentPreviewSection && (
-        <Suspense fallback={<SectionLoading sectionName="Content Preview" />}>
-          <ContentPreviewSection section={contentPreviewSection} />
-        </Suspense>
-      )}
-
       {/* Students opinion */}
       {testimonialsSection && (
         <Suspense fallback={<SectionLoading sectionName="Testimonials" />}>
@@ -142,34 +98,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ data, language }) => {
       {faqSection && (
         <Suspense fallback={<SectionLoading sectionName="FAQ" />}>
           <FAQSection section={faqSection} language={language} />
-        </Suspense>
-      )}
-
-      {/* Free Items */}
-      {freeItemsSection && (
-        <Suspense fallback={<SectionLoading sectionName="Free Items" />}>
-          <FreeItemsSection section={freeItemsSection} />
-        </Suspense>
-      )}
-
-      {/* Certificate */}
-      {certificateSection && (
-        <Suspense fallback={<SectionLoading sectionName="Certificate" />}>
-          <CertificateSection section={certificateSection} />
-        </Suspense>
-      )}
-
-      {/* Requirements */}
-      {requirementsSection && (
-        <Suspense fallback={<SectionLoading sectionName="Requirements" />}>
-          <RequirementsSection section={requirementsSection} />
-        </Suspense>
-      )}
-
-      {/* How to Pay */}
-      {howToPaySection && (
-        <Suspense fallback={<SectionLoading sectionName="Payment Process" />}>
-          <HowToPaySection section={howToPaySection} />
         </Suspense>
       )}
     </div>
