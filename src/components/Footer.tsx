@@ -1,6 +1,5 @@
 import React from 'react';
 import { Data, Language } from '@/types/api';
-
 import { Facebook, Twitter, Youtube, Instagram } from 'lucide-react';
 import Link from 'next/link';
 
