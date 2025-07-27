@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-                <Image src="/logo.svg" alt="10 Minute School" width={100} height={100} loading="lazy" />
+                <Image src="https://cdn.10minuteschool.com/images/svg/10mslogo-svg.svg" alt="10 Minute School" width={100} height={100} loading="lazy" />
               </Link>
             </div>
           </div>
