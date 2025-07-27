@@ -9,7 +9,7 @@ A modern, responsive product page for IELTS courses built with Next.js, TypeScri
 - ✅ **Course Instructors** - Instructor section with profiles
 - ✅ **Product Trailer** - YouTube video player integration
 - ✅ **Pricing** - Default pricing with discount display
-- ✅ **CTA Buttons** - Dynamic call-to-action text
+- ✅ **Buttons** - Dynamic call-to-action text
 - ✅ **Localization** - English and Bengali language support
 - ✅ **Server-Side Rendering** - Next.js App Router with ISR
 
@@ -35,7 +35,7 @@ A modern, responsive product page for IELTS courses built with Next.js, TypeScri
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
-- **State Management**: React Hooks
+- **State Management**: Redux, React Hooks
 - **API**: REST API with custom headers
 - **Deployment**: Vercel-ready
 
