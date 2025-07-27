@@ -9,7 +9,7 @@ export const fetchCourseData = createAsyncThunk(
     try {
       const response = await fetchIELTSCourseData(language);
       return response.data;
-    } catch (error) {
+    } catch {
       return rejectWithValue('Failed to load course information. Please try again later.');
     }
   }
