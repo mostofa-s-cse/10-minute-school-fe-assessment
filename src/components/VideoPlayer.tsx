@@ -21,6 +21,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title, thumbnail })
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+          loading="lazy"
         />
       </div>
     );
@@ -35,6 +36,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title, thumbnail })
           width={400}
           height={225}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       ) : (
         <div className="w-full h-full bg-gray-800 flex items-center justify-center">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Section, Language } from '@/types/api';
 import Image from 'next/image';
 import { ArrowRight, BadgeCheck } from 'lucide-react';
-import Button from './ui/Button';
+import Button from '@/components/ui/Button';
 
 interface InstructorSectionProps {
   section: Section;

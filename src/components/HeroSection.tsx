@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import { Data, Language } from '@/types/api';
-import Button from './ui/Button';
-import Checklist from './Checklist';
-import VideoPlayer from './VideoPlayer';
+import Button from '@/components/ui/Button';
+import Checklist from '@/components/Checklist';
+import VideoPlayer from '@/components/VideoPlayer';
 import {FileImage} from 'lucide-react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, Play, Star } from 'lucide-react';
