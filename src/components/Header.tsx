@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Language } from '@/types/api';
 import Image from 'next/image';
@@ -24,18 +26,18 @@ const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#course" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
+            <Link href="#course" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
               {language === 'en' ? 'Course' : 'কোর্স'}
-            </a>
-            <a href="#instructor" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
+            </Link>
+            <Link href="#instructor" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
               {language === 'en' ? 'Instructor' : 'প্রশিক্ষক'}
-            </a>
-            <a href="#features" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
+            </Link>
+            <Link href="#features" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
               {language === 'en' ? 'Features' : 'বৈশিষ্ট্য'}
-            </a>
-            <a href="#details" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
+            </Link>
+            <Link href="#details" className="text-gray-700 hover:text-primary-600 transition-colors duration-200">
               {language === 'en' ? 'Details' : 'বিস্তারিত'}
-            </a>
+            </Link>
           </nav>
 
           {/* Language Switcher */}

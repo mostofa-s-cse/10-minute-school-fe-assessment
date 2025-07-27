@@ -1,13 +1,9 @@
-// API Response Types for IELTS Course Product Page
-// Based on the actual API response from 10 Minute School
-
-// Root API Response Structure
 export interface ApiResponse {
   code: number;
   data: Data;
-  error: any[];
+  error: unknown[];
   message: string;
-  payload: any[];
+  payload: unknown[];
   status_code: number;
 }
 
@@ -34,7 +30,7 @@ export interface Data {
   cta_text: CtaText;
   sections: Section[];
   is_cohort_based_course: boolean;
-  secondary_cta_group: any[];
+  secondary_cta_group: unknown[];
   delivery_method: string;
 }
 
@@ -164,10 +160,11 @@ export interface PriceDisplayProps {
   language: Language;
 }
 
-export interface CtaButtonProps {
+export interface ButtonProps {
   text: string;
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
+  width?: 'auto' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | 'full';
 } 
