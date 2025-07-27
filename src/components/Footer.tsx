@@ -2,6 +2,7 @@ import React from 'react';
 import { Data, Language } from '@/types/api';
 import { Facebook, Twitter, Youtube, Instagram } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 interface FooterProps {
@@ -16,8 +17,8 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <img 
-              src="/10mslogo-svg.svg" 
+            <Image 
+              src="/logo.svg" 
               alt="10 Minute School Logo" 
               width={140} 
               height={140} 
