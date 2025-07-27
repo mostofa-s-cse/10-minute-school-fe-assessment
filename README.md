@@ -39,6 +39,9 @@ A modern, responsive product page for IELTS courses built with Next.js, TypeScri
 - **API**: REST API with custom headers
 - **Deployment**: Vercel-ready
 
+### Live Link:
+https://10-minute-school-fe-assessment.vercel.app/
+
 ## 📁 Project Structure
 
 ```
@@ -153,18 +156,6 @@ import { ArrowRight } from 'lucide-react';
 />
 ```
 
-### CTA Button Component
-```tsx
-import CtaButton from '@/components/ui/CtaButton';
-
-<CtaButton 
-  text="Enroll Now" 
-  variant="primary" 
-  size="lg" 
-  fullWidth 
-/>
-```
-
 ## 🔧 Configuration
 
 ### Environment Variables
@@ -253,5 +244,9 @@ Stay updated with the latest changes:
 - Read the changelog
 
 ---
+
+
+### Full Page Screenshot
+<img width="2880" height="11074" alt="full-page screenshot" src="https://github.com/user-attachments/assets/6edb73f1-7a47-424f-9e64-a3cc756f841e" />
 
 **Built with ❤️ using Next.js, TypeScript, and Tailwind CSS** 
